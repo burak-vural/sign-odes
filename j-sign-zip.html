@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-İmza Şablonu</title>
+    <style>
+        /* Genel stil */
+        .email-signature {
+            font-family: Arial, sans-serif; /* Yazı fontu */
+            font-size: 14px; /* Yazı punto boyutu */
+            color: #333; /* Yazı rengi */
+            line-height: 1.6;
+            max-width: 600px; /* İmza genişliği */
+            margin: 0 auto;
+            padding: 100px;
+            background-image: url('https://img.freepik.com/premium-vector/abstract-line-wave-element-white-background-wave-line-element_745217-80.jpg');
+    		background-size: cover; /* Arka plan resmi pencereyi kaplayacak şekilde boyutlandır */
+    		background-position: center; /* Arka plan resmi ortala */
+    		background-repeat: no-repeat; /* Arka plan resmini tekrar etme */
+        }
+        .signature-logo {
+            max-width: 380px; /* Logo genişliği */
+            position: absolute; /* Mutlak pozisyon */
+            top: 22%; /* Üstten ortala */
+            right: 35%; /* Sağdan ortala */
+            transform: translate(10%, -10%); /* Sağa ve yukarıya kaydırarak ortala */
+        }
+        .social-icons {
+            text-align: 20px; /* Sosyal ikonların ortalanması */
+            position: absolute;
+            top: 40%;
+            right: 33%;
+            transformm: translate(10%, -10%);
+        }
+        .social-icons a {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .icon {
+            max-width: 24px; /* İkon genişliği */
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+        .name {
+            font-family: Arial, sans-serif; /* Yazı fontu */
+            font-size: 25px; /* Yazı punto boyutu */
+            color: #242323; /* İsim rengi */
+            font-weight: bold; /* İsim kalın yazı */
+        }
+        .title {
+            color: #666; /* Ünvan rengi */
+        }
+        .separator {
+            display: block;
+            height: 5px;
+            width: 20px;
+            background-color: #ccc; /* Ayırıcı çizgi rengi */
+            margin: 10px 0;
+        }           
+        .phone {
+            font-weight: regular; /* İsim kalın yazı */
+            color: #242323; /* İsim rengi */
+            font-family: Arial, sans-serif; /* Yazı fontu */
+            font-size: 14px; /* Yazı punto boyutu */
+            line-height: 1.6;
+            margin: 0 auto;
+            }
+        .email {
+            font-weight: regular; /* İsim kalın yazı */
+            color: #242323; /* İsim rengi */
+            font-family: Arial, sans-serif; /* Yazı fontu */
+            font-size: 14px; /* Yazı punto boyutu */
+            line-height: 1.6;
+            margin: 0 auto;
+            }
+        .website {
+            font-weight: regular; /* İsim kalın yazı */
+            color: #242323; /* İsim rengi */
+            font-family: Arial, sans-serif; /* Yazı fontu */
+            font-size: 14px; /* Yazı punto boyutu */
+            line-height: 1.6;
+            margin: 0 auto;
+            }
+        .adres {
+            font-weight: regular; /* İsim kalın yazı */
+            color: #242323; /* İsim rengi */
+            font-family: Arial, sans-serif; /* Yazı fontu */
+            font-size: 14px; /* Yazı punto boyutu */
+            line-height: 1.6;
+            margin: 0 auto;
+            }
+         .icon {
+    	    margin-right: 10px; /* İkon ile numara arasına boşluk eklemek için */
+			} 
+    </style>
+</head>
+<body>
+    <div class="email-signature">
+        <!-- Logo -->
+        <img src="https://www.evergee.com.tr/wp-content/uploads/2023/10/evergee-logo-r.png" alt="Logo" class="signature-logo">
+        
+        <!-- İsim -->
+        <span class="name">John Doe</span><br>
+        
+        <!-- Ünvan -->
+        <span class="title">Managing Director</span><br>
+        
+        <!-- Gri çizgi -->
+        <span class="separator"></span>
+        
+        <!-- Kırmızı çizgi -->
+        <span class="red-line"></span>
+        
+        <!-- Sosyal medya bağlantıları -->
+        <div class="social-icons">
+            <a href="https://www.instagram.com/" target="_blank"><img src="https://cdn-icons-png.freepik.com/512/11023/11023974.png?ga=GA1.1.1082968189.1720719618" alt="Instagram" class="icon"></a>
+            <a href="https://www.linkedin.com/" target="_blank"><img src="https://cdn-icons-png.freepik.com/512/15522/15522175.png?ga=GA1.1.1082968189.1720719618" alt="LinkedIn" class="icon"></a>
+        </div>
+        
+        <!-- Diğer bilgiler (telefon, e-posta vs.) -->
+        <span class="icon">
+    <img src="https://cdn-icons-png.freepik.com/512/5724/5724260.png?ga=GA1.1.1082968189.1720719618" alt="Logo" width="24" height="24">
+</span>
+        <span class="phone">+90 000 00 00</span><br>
+        <span class="icon">
+    <img src="https://cdn-icons-png.freepik.com/512/10400/10400884.png?ga=GA1.1.1082968189.1720719618" alt="Logo" width="24" height="24">
+</span>
+        <span class="email">mail@mail.com</span><br>
+        <span class="icon">
+    <img src="https://cdn-icons-png.freepik.com/512/5724/5724212.png?ga=GA1.1.1082968189.1720719618" alt="Logo" width="24" height="24">
+</span>
+		<span class="website">www.website.com</span><br>
+        <span class="icon">
+    <img src="https://cdn-icons-png.freepik.com/512/8280/8280628.png?ga=GA1.1.1082968189.1720719618" alt="Logo" width="24" height="24">
+</span>
+        <span class="adres">Company Name<br>
+        Address, City, Country</span><br>
+    </div>
+</body>
+</html>
